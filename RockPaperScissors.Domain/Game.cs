@@ -50,11 +50,11 @@ namespace RockPaperScissors.Domain
 
         protected abstract void ShowGameWinner();
 
-        public bool IsPlayerWon() => this.IsGameOver() && this.Score.Wins > this.Score.Losses;
+        protected bool IsPlayerWon() => this.IsGameOver() && this.Score.Wins > this.Score.Losses;
 
-        public bool IsGameOver() => this.Score.NumberOfMatches() == this.BestOf;
+        protected bool IsGameOver() => this.Score.Wins + this.Score.Losses == this.BestOf;
 
-        public MatchResult JudgeMatch(IMove playerMove1, IMove playerMove2)
+        protected MatchResult JudgeMatch(IMove playerMove1, IMove playerMove2)
         {
             if (playerMove1.WinAgainst(playerMove2))
             {

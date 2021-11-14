@@ -29,7 +29,5 @@ namespace RockPaperScissors.Domain
         public Score MatchLost() => new Score(this.Wins, this.Losses++, this.Draws);
 
         public Score MatchDrawn() => new Score(this.Wins, this.Losses, this.Draws++);
-
-        public int NumberOfMatches() => this.Wins + this.Losses + this.Draws;
     }
 }

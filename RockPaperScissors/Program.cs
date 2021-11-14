@@ -14,10 +14,32 @@ namespace RockPaperScissors
 
             var moves = new List<IMove> { new Rock(), new Paper(), new Scissors(), new Flamethrower() };
             var opponent = GetOpponent();
+            var bestOf = SelectGameLength();
 
-            var game = new ConsoleGame(3, moves, new ConsolePlayer("Player1"), opponent);
+            var game = new ConsoleGame(bestOf, moves, new ConsolePlayer("Player1"), opponent);
 
             game.PlayGame();
+        }
+
+        private static int SelectGameLength()
+        {
+            var bestOf = 0;
+
+            while (bestOf % 2 == 0 || bestOf <= 0)
+            {
+                Console.WriteLine("\nPlease select an odd positive integer number of match to win.");
+                var value = Console.ReadLine();
+                try
+                {
+                    bestOf = int.Parse(value!);
+                }
+                catch
+                {
+                    Console.WriteLine($"\n{value} is not a integer number.");
+                }
+            }
+
+            return bestOf;
         }
 
         private static Player GetOpponent()
