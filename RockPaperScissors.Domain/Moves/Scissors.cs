@@ -1,26 +1,27 @@
 ﻿namespace RockPaperScissors.Domain.Moves
 {
-    public class Rock : IMove
+    public class Scissors : IMove
+
     {
         public string Name()
         {
-            return "Rock";
+            return "Scissors";
         }
 
         public string NameSelection()
         {
-            return "[R]ock";
+            return "[S]cissors";
         }
 
         public bool IsMove(string move)
         {
             move = move.ToLower();
-            return move == "r" || move == "rock" || move == "[r]ock";
+            return move == "s" || move == "scissors" || move == "[s]cissors";
         }
 
         public bool WinAgainst(IMove move)
         {
-            return move is Scissors || move is Flamethrower;
+            return move is Paper || move is Flamethrower;
         }
     }
 }

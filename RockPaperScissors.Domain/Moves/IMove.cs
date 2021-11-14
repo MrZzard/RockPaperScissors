@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
-
-namespace RockPaperScissors.Domain.Moves
+﻿namespace RockPaperScissors.Domain.Moves
 {
     public interface IMove
-    {
-        public bool IsMove(string move);
 
-        IEnumerable<IMove> WinAgainst();
+    {
+        string Name();
+
+        string NameSelection();
+
+        bool IsMove(string move);
+
+        bool WinAgainst(IMove move);
     }
 }

@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-using RockPaperScissors.Domain;
 using RockPaperScissors.Domain.Moves;
+using RockPaperScissors.Domain.Players;
 
 namespace RockPaperScissors
 {
@@ -13,33 +12,41 @@ namespace RockPaperScissors
         {
             Console.WriteLine("Welcome to Rock Paper Scissors");
 
-            //Console.WriteLine("Select your opponent: [p]layer or [c]omputer");
-            Game game = new Game(3);
-            while (!game.IsGameOver())
-            {
-            }
+            var moves = new List<IMove> { new Rock(), new Paper(), new Scissors(), new Flamethrower() };
+            var opponent = GetOpponent();
 
-            Console.ReadLine();
+            var game = new ConsoleGame(3, moves, new ConsolePlayer("Player1"), opponent);
+
+            game.PlayGame();
         }
 
-        private IMove GetPlayerMove(IReadOnlyCollection<IMove> availableMoves)
+        private static Player GetOpponent()
         {
-            IMove move = null;
+            Player opponent;
 
-            while (move == null)
+            Console.WriteLine("\nWould you like to play vs a [P]layer, a [R]andomAi or a [B]eatPreviousAi?");
+            var value = Console.ReadLine();
+            switch (value?.ToLower())
             {
-                Console.WriteLine($"Select your Move: {string.Join(", ", availableMoves)}");
-                var value = Console.ReadLine();
-
-                move = availableMoves.SingleOrDefault(x => x.IsMove(value));
-
-                if (move == null)
-                {
-                    Console.WriteLine($"{value} is not a valid move.");
-                }
+                case "player":
+                case "p":
+                    opponent = new ConsolePlayer("Player2");
+                    break;
+                case "randomai":
+                case "r":
+                    opponent = new RandomAi();
+                    break;
+                case "beatpreviousai":
+                case "b":
+                    opponent = new BeatPreviousAi();
+                    break;
+                default:
+                    Console.WriteLine($"\n'{value}' is not a valid option.");
+                    opponent = GetOpponent();
+                    break;
             }
 
-            return move;
+            return opponent;
         }
     }
 }

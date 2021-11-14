@@ -1,0 +1,6 @@
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors.Domain\bin\Debug\RockPaperScissors.Domain.dll
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors.Domain\bin\Debug\RockPaperScissors.Domain.pdb
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors.Domain\obj\Debug\RockPaperScissors.Domain.csprojAssemblyReference.cache
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors.Domain\obj\Debug\RockPaperScissors.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors.Domain\obj\Debug\RockPaperScissors.Domain.dll
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors.Domain\obj\Debug\RockPaperScissors.Domain.pdb

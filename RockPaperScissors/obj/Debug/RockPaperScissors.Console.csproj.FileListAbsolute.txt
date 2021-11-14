@@ -1,0 +1,10 @@
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\bin\Debug\RockPaperScissors.exe.config
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\bin\Debug\RockPaperScissors.exe
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\bin\Debug\RockPaperScissors.pdb
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\bin\Debug\RockPaperScissors.Domain.dll
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\bin\Debug\RockPaperScissors.Domain.pdb
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.Console.csprojAssemblyReference.cache
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.Console.csproj.CoreCompileInputs.cache
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.Console.csproj.CopyComplete
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.exe
+C:\Users\jccharron\source\repos\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.pdb

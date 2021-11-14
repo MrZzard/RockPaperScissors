@@ -31,10 +31,5 @@ namespace RockPaperScissors.Domain
         public Score MatchDrawn() => new Score(this.Wins, this.Losses, this.Draws++);
 
         public int NumberOfMatches() => this.Wins + this.Losses + this.Draws;
-
-        public override string ToString()
-        {
-            return $"Score: {this.Wins} wins, {this.Losses} losses, {this.Draws} draws";
-        }
     }
 }

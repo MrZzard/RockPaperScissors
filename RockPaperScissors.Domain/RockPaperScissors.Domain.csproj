@@ -42,10 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game.cs" />
+    <Compile Include="MatchResult.cs" />
     <Compile Include="Moves\IMove.cs" />
+    <Compile Include="Moves\Flamethrower.cs" />
+    <Compile Include="Moves\Scissors.cs" />
+    <Compile Include="Moves\Paper.cs" />
     <Compile Include="Moves\Rock.cs" />
+    <Compile Include="PlayerResult.cs" />
+    <Compile Include="Players\RandomAi.cs" />
+    <Compile Include="Players\BeatPreviousAi.cs" />
+    <Compile Include="Players\IPlayer.cs" />
+    <Compile Include="Players\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Score.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
