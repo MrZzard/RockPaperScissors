@@ -17,7 +17,7 @@ namespace RockPaperScissors
         protected override void ShowScore()
         {
             Console.WriteLine(
-                $"\n Best of {this.BestOf} - {this.Player1.Name} won {this.Score.Wins} | {this.Player2.Name} won {this.Score.Losses} | Draws {this.Score.Draws}");
+                $"\nBest of {this.BestOf} - {this.Player1.Name} won {this.Score.Wins} | {this.Player2.Name} won {this.Score.Losses} | Draws {this.Score.Draws}");
         }
 
         protected override void ShowMatchResult(MatchResult result)
@@ -44,7 +44,7 @@ namespace RockPaperScissors
             var winner = this.IsPlayerWon() ? this.Player1 : this.Player2;
 
             Console.Clear();
-            Console.WriteLine($"\n\n{winner.Name} has won!");
+            Console.WriteLine($"\n\n{winner.Name} has won the game!");
 
             this.ShowScore();
 
